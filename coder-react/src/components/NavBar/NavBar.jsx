@@ -1,44 +1,41 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from 'react';
 import CartWidget from "../CartWidget/CartWidget";
+import './NavBar.css'
+import { NavLink, Link } from "react-router-dom";
+
+
+
 
 const NavBar = () => {
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">
-                Camisetas.com
-            </a>
-            <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">
-                            Home <span className="sr-only">(current)</span>
-                        </a>
+        <header className="header">
+            <Link to={"/"} className="header__titulo">
+                <h1>
+                    Perifericos.com
+                </h1>
+            </Link>
+            <nav>
+                <ul className="nav">
+                    <li className='nav__art'>
+                        <NavLink to={"/categoria/mouse"} className={'nav__link'}>
+                            Mouse
+                        </NavLink>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">
-                            Products
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">
-                            Contact
-                        </a>
+                    <li className='nav__art'>
+                        <NavLink to={"/categoria/teclado"} className={'nav__link'}>
+                            Teclado
+                        </NavLink></li>
+                    <li className='nav__art'>
+                        <NavLink to={"/categoria/auriculares"} className={'nav__link'}>
+                            Auriculares
+                        </NavLink></li>
+                    <li className='nav__art'>
+                        <CartWidget />
                     </li>
                 </ul>
-                <CartWidget />
-            </div>
-        </nav>
+            </nav>
+        </header>
     );
 };
 

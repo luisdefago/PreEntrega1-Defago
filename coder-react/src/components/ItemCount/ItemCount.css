@@ -1,0 +1,9 @@
+.count {
+    display: flex;
+}
+
+.card-button {
+    margin: 0 10px;
+    max-height: 30px;
+    align-items: center;
+}

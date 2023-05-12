@@ -1,0 +1,47 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(253, 97, 26);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.nav__art {
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+.nav__link:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.header__titulo {
+    margin: 15px 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.header__titulo:hover {
+    color: black;
+    border-bottom: 4px solid;
+}
+
+.cart-widget>span {
+    color: black;
+    text-decoration: none;
+}

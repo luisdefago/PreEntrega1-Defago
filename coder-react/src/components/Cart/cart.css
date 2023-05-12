@@ -1,0 +1,53 @@
+.carrito {
+    display: flex;
+    max-width: fit-content;
+    margin: 80px auto;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    text-align: center;
+}
+
+.cart-product {
+    padding: 10px;
+}
+
+.cart-fin {
+    border-left: 0.5px solid rgb(107, 107, 107);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.button {
+    color: #090909;
+    padding: 0.5em 0.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+        height: fit-content;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.button:hover {
+    border: 1px solid white;
+    color: #090909;
+}
+
+.button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+        -4px -4px 12px #ffffff;
+}
+
+.sin-product {
+    padding: 100px;
+}
+
+.--sin {
+    margin: 0 50px;
+}
